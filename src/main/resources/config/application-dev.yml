@@ -22,7 +22,7 @@ eureka:
         fetch-registry: false
         register-with-eureka: false
         serviceUrl:
-            defaultZone: http://admin:${security.user.password:admin}@localhost:8761/eureka/
+            defaultZone: http://admin:${security.user.password:admin}@skout-config.herokuapp.com:8761/eureka/
 
 jhipster:
     security:
@@ -35,11 +35,11 @@ jhipster:
         jmx.enabled: true
         spark:
             enabled: false
-            host: localhost
+            host: skout-config.herokuapp.com
             port: 9999
         graphite:
             enabled: false
-            host: localhost
+            host: skout-config.herokuapp.com
             port: 2003
             prefix: catalog
         logs: # Reports Dropwizard metrics in the logs
@@ -48,7 +48,7 @@ jhipster:
     logging:
         logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
             enabled: false
-            host: localhost
+            host: skout-config.herokuapp.com
             port: 5000
             queueSize: 512
         spectator-metrics: # Reports Spectator Circuit Breaker metrics in the logs
