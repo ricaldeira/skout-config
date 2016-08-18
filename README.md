@@ -1,0 +1,2 @@
+# skout-config
+Skout Config
